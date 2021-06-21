@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-//go范围  范围可对各种数据结构中的元素进行迭代
+//go范围range  范围可对各种数据结构中的元素进行迭代
 func main() {
 	//var num  = [3]string{"1","2","3"}
 	nums := []int{1, 2, 3}
