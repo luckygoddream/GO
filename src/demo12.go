@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-//go的指针实例
+//go的指针实例1
 func zeroVal(iVal int) {
 	iVal = 0
 }
