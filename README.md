@@ -1,4 +1,4 @@
-#GO学习小结
+# GO学习小结
 ## 1.int 和 int64 是相同的类型吗？
     package main
     func main() {
