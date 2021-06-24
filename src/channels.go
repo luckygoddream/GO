@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"runtime"
+)
 
 func main() {
 	message := make(chan string)
@@ -9,4 +13,8 @@ func main() {
 
 	msg := <-message
 	fmt.Println(msg)
+	var goos string = runtime.GOOS
+	fmt.Printf("The operating system is: %s\n", goos)
+	path := os.Getenv("PATH")
+	fmt.Printf("Path is %s\n", path)
 }
