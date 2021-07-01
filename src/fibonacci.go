@@ -2,9 +2,11 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func main() {
+	star := time.Now()
 	x := fib(5)
 	fmt.Println(x)
 	des(10)
@@ -14,6 +16,9 @@ func main() {
 
 	m := muiltply(4)
 	fmt.Println(m)
+	end := time.Now()
+	sub := end.Sub(star)
+	fmt.Println(sub)
 }
 func fib(i int) int {
 	if i <= 2 {
